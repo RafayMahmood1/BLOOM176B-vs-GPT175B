@@ -99,7 +99,7 @@ def bloom(state):
     prompt = f"Response to the following email.\nEmail:\n{state}\n\n###\nResponse:\n"
     import requests
 
-    API_URL = "https://api-inference.huggingface.co/models/bigscience/bloom"
+    API_URL = "################################"
     headers = {"Authorization": "Bearer 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"}
 
     result_length = 250
@@ -163,7 +163,7 @@ def gpt3(state):
     text = state
     selectedTone = "Professional"
 
-    API_URL = "https://punch.punchleadgen.com/api/generate-response"
+    API_URL = "###################################"
     payload = {"email": f'"""{text}"""', "tone": selectedTone}
     files = []
     headers = {}
